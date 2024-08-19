@@ -11,7 +11,7 @@ function PaymentForm() {
     setStatus('מעבד את הבקשה...');
 
     try {
-      const response = await fetch('/api/v11/LowProfile/Create', {
+      const response = await fetch('https://secure.cardcom.solutions/api/v11/LowProfile/Create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
